@@ -1,10 +1,12 @@
-# purescript-sublime3
+# sublime-purescript-syntax
 
 PureScript syntax support for Sublime Text 3
 
 Syntax is derived from `b123400/purescript-ide-sublime` (a6b0fe1b02385e8fc0bb6a7d0a8d51c38d8a00d9). License and copyright notice is in `LICENSE_THIRD_PARTY.md`.
 
 ## Installation
+
+Install from [Package Control](https://packagecontrol.io) or manually:
 
 ```bash
 mkdir ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/PureScriptSyntax
