@@ -227,13 +227,9 @@ contexts:
       scope: support.function.ioref.purescript
   math:
     - include: math-constant
-    - include: math-function
   math-constant:
     - match: \b(e|ln10|ln2|log10e|log2e|pi|sqrt1_2|sqrt2)\b
       scope: constant.support.math.purescript
-  math-function:
-    - match: \b(abs|aceil|acos|asin|atan|atan2|cos|exp|floor|log|max|min|pow|round|sin|sqrt|tan)\b
-      scope: support.function.math.purescript
   maybe:
     - include: maybe-data
     - include: maybe-function
