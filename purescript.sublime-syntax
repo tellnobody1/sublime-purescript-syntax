@@ -308,7 +308,7 @@ contexts:
     - match: \b(boolAnd|boolNot|boolOr|not)\b
       scope: support.function.prelude.boollike.purescript
   prelude-function-category:
-    - match: \b(id)\b
+    - match: \b(identity)\b
       scope: support.function.prelude.category.purescript
   prelude-function-monad:
     - match: \b(return)\b
