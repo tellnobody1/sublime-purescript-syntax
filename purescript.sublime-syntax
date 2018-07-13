@@ -194,11 +194,7 @@ contexts:
     - match: \b(Enum)\b
       scope: storage.type.enum.purescript
   error:
-    - include: error-data
     - include: error-function
-  error-data:
-    - match: \b(Error)\b
-      scope: support.function.data.error.purescript
   error-function:
     - match: \b(catchError|throwError)\b
       scope: support.function.error.purescript
