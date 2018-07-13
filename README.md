@@ -6,7 +6,7 @@ Syntax is derived from `b123400/purescript-ide-sublime` (a6b0fe1b02385e8fc0bb6a7
 
 ## Installation
 
-Install from [Package Control](https://packagecontrol.io) or manually:
+Install from package `PureScript Syntax` from *Package Control* or manually:
 
 ```bash
 mkdir ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/PureScriptSyntax
