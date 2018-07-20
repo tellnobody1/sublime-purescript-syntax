@@ -129,12 +129,16 @@ contexts:
   array:
     - include: array-function
     - include: array-op
+    - include: array-constant
   array-function:
     - match: \b(all|any|concat|concatMap|deleteAt|filter|find|foldl|foldr|head|indexOf|insertAt|isEmpty|joinS|joinWith|lastIndexOf|length|map|push|range|reverse|shift|singleton|slice|sort|tail|updateAt|zipWith)\b
       scope: support.function.array.purescript
   array-op:
     - match: (:)
       scope: keyword.operator.array.purescript
+  array-constant:
+    - match: \[\]
+      scope: constant.other.purescript
   comments:
     - match: \-\-.*
       scope: comment.line.purescript
