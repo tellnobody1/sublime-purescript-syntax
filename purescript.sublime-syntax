@@ -50,14 +50,6 @@ contexts:
         - match: $
           pop: true
         - include: module-name
-    - match: ^\s*\b(type)\b
-      captures:
-        1: keyword.other.purescript
-      push:
-        - meta_scope: entity.name.type.purescript
-        - match: $
-          pop: true
-        - include: type-simple
     - match: ^\s*\b(class)\b
       captures:
         1: keyword.other.purescript
