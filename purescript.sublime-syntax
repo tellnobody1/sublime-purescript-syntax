@@ -213,7 +213,7 @@ contexts:
     - include: math-constant
   math-constant:
     - match: \b(e|ln10|ln2|log10e|log2e|pi|sqrt1_2|sqrt2)\b
-      scope: constant.support.math.purescript
+      scope: constant.other.purescript
   maybe:
     - include: maybe-data
     - include: maybe-function
