@@ -164,17 +164,9 @@ contexts:
         2: constant.other.purescript
   eff:
     - include: eff-data
-    - include: eff-function
-    - include: eff-type
   eff-data:
-    - match: \b(Eff)\b
+    - match: \b(Effect)\b
       scope: support.function.data.eff.purescript
-  eff-function:
-    - match: \b(bindEff|forE|foreachE|retEff|runPure|untilE|whileE)\b
-      scope: support.function.eff.purescript
-  eff-type:
-    - match: \b(Pure)\b
-      scope: support.type.eff.purescript
   either:
     - include: either-data
     - include: either-function
