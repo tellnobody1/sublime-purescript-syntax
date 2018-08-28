@@ -61,7 +61,6 @@ contexts:
           pop: true
         - match: '([A-Z][\w.'']*)'
           scope: entity.other.inherited-class.purescript
-        - include: prelude-typeclass
         - include: generic-tyvar
     - match: ^\s*\b(instance)\b
       captures:
@@ -127,12 +126,8 @@ contexts:
     - include: tuple
     - include: data
   array:
-    - include: array-function
     - include: array-op
     - include: array-constant
-  array-function:
-    - match: \b(all|any|concat|concatMap|deleteAt|filter|find|foldl|foldr|head|indexOf|insertAt|isEmpty|joinS|joinWith|lastIndexOf|length|map|push|range|reverse|shift|singleton|slice|sort|tail|updateAt|zipWith)\b
-      scope: support.function.array.purescript
   array-op:
     - match: (:)
       scope: keyword.operator.array.purescript
@@ -256,8 +251,6 @@ contexts:
   prelude:
     - include: prelude-data
     - include: prelude-function
-    - include: prelude-type
-    - include: prelude-typeclass
   prelude-data:
     - match: \b(Ref)\b
       scope: support.function.data.prelude.purescript
@@ -308,12 +301,6 @@ contexts:
   prelude-function-show:
     - match: \b(show|showNumber)\b
       scope: support.function.prelude.show.purescript
-  prelude-type:
-    - match: \b(Boolean|Number|Int|Char|String|Array)\b
-      scope: support.type.prelude.purescript
-  prelude-typeclass:
-    - match: \b(Alternative|Applicative|Bits|BoolLike|Category|Eq|Functor|Monad|Num|Ord|Read|Show)\b
-      scope: storage.type.prelude.purescript
   random:
     - include: random-data
     - include: random-function
