@@ -265,8 +265,10 @@ contexts:
     - match: \b(Monoid)\b
       scope: storage.type.monoid.purescript
   numbers:
-    - match: '(?<!\w)(\b(\d+)|(\d+(\.\d+)?(e[+-]?\d+)?)\b)'
+    - match: \b([0-9]+|0([xX][0-9a-fA-F]+|[oO][0-7]+))\b
       scope: constant.numeric.purescript
+    - match: \b([0-9]+\.[0-9]+([eE][+-]?[0-9]+)?|[0-9]+[eE][+-]?[0-9]+)\b
+      scope: constant.numeric.float.purescript
   operator:
     - match: '[|!%$#?~+:\-.=</>\\]+'
       comment: In case this regex seems overly general, note that Purescript permits the definition of new operators which can be nearly any string of punctuation characters, such as $%^&*.
