@@ -115,7 +115,6 @@ contexts:
     - include: error
     - include: global
     - include: ioref
-    - include: math
     - include: maybe
     - include: monad
     - include: random
@@ -208,11 +207,6 @@ contexts:
   ioref-function:
     - match: \b(modifyIORef|newIORef|readIORef|unsafeRunIORef|writeIORef)\b
       scope: support.function.ioref.purescript
-  math:
-    - include: math-constant
-  math-constant:
-    - match: \b(e|ln10|ln2|log10e|log2e|pi|sqrt1_2|sqrt2)\b
-      scope: constant.other.purescript
   maybe:
     - include: maybe-data
     - include: maybe-function
