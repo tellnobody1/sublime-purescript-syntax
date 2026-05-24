@@ -356,17 +356,6 @@ contexts:
     - match: \b(charAt|indexOfS|lastIndexOfS|lengthS|localeCompare|replace|sliceS|split|substr|substring|toLower|toUpper|trim)\b
       scope: support.function.string.purescript
   strings:
-    - match: \s+(')
-      captures:
-        1: invalid.illegal.string.purescript
-      push:
-        - meta_scope: invalid-strings
-        - match: (')
-          captures:
-            1: invalid.illegal.string.purescript
-          pop: true
-        - match: .
-          scope: invalid.illegal.string.purescript
     - match: (\")
       captures:
         0: punctuation.definition.string.begin.purescript
